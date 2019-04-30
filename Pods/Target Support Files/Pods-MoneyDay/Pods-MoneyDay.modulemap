@@ -1,0 +1,6 @@
+framework module Pods_MoneyDay {
+  umbrella header "Pods-MoneyDay-umbrella.h"
+
+  export *
+  module * { export * }
+}

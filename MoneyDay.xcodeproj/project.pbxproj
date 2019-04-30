@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C058352226F15C4009A98C1 /* IncomeHeaderForTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C058351226F15C4009A98C1 /* IncomeHeaderForTable.swift */; };
+		2C1BE0B22269DB4A00A365CA /* IncomeEditLabelMoney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1BE0B12269DB4A00A365CA /* IncomeEditLabelMoney.swift */; };
+		2C1BE0B42269DCE700A365CA /* IncomeEditTextFieldMoney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1BE0B32269DCE700A365CA /* IncomeEditTextFieldMoney.swift */; };
+		2C1BE0B62269E0D500A365CA /* IncomeEditLabelComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1BE0B52269E0D500A365CA /* IncomeEditLabelComment.swift */; };
+		2C1BE0B82269E20700A365CA /* IncomeEditTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1BE0B72269E20700A365CA /* IncomeEditTextView.swift */; };
+		2C1BE0BA2269E66400A365CA /* IncomeEditButtonAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1BE0B92269E66400A365CA /* IncomeEditButtonAdd.swift */; };
+		2C1BE0BE2269FBD600A365CA /* OptionListObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1BE0BD2269FBD600A365CA /* OptionListObject.swift */; };
+		2C4380FD227053F10095D0C8 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4380FC227053F10095D0C8 /* CommentViewController.swift */; };
+		2C4380FF2270548D0095D0C8 /* CommentTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4380FE2270548D0095D0C8 /* CommentTextView.swift */; };
+		2C4381012270580D0095D0C8 /* CommentButtonChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4381002270580D0095D0C8 /* CommentButtonChange.swift */; };
+		2C4C5114226EE84B00F1FB69 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C5113226EE84B00F1FB69 /* MainView.swift */; };
+		2C50B6BB226C8EEA008A41D5 /* IncomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C50B6BA226C8EEA008A41D5 /* IncomeTableViewCell.swift */; };
+		2C50BE592269B233000A3452 /* IncomeEditLabelDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C50BE582269B233000A3452 /* IncomeEditLabelDate.swift */; };
+		2C578ECE2276D9FB0054D997 /* IncomeEditeCategoryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C578ECD2276D9FB0054D997 /* IncomeEditeCategoryTextField.swift */; };
+		2C578ED42276E1940054D997 /* ListCategoryIncome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C578ED32276E1940054D997 /* ListCategoryIncome.swift */; };
+		2C578ED62276F4BF0054D997 /* ChoiceHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C578ED52276F4BF0054D997 /* ChoiceHeader.swift */; };
+		2C578ED8227702C50054D997 /* ChoiceCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C578ED7227702C50054D997 /* ChoiceCategoryTableViewCell.swift */; };
+		2C65E202226470D100398636 /* ColorNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C65E201226470D100398636 /* ColorNavBar.swift */; };
+		2C6607592271BE590092EE66 /* MainBalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6607582271BE590092EE66 /* MainBalanceView.swift */; };
+		2C66075B2271C69A0092EE66 /* IncomeBackBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C66075A2271C69A0092EE66 /* IncomeBackBtn.swift */; };
+		2C66075D2271CAA60092EE66 /* IncomeAddBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C66075C2271CAA60092EE66 /* IncomeAddBtn.swift */; };
+		2C66075F2271D0230092EE66 /* labelCommentChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C66075E2271D0230092EE66 /* labelCommentChange.swift */; };
+		2C6607612271D7720092EE66 /* IncomeEditBackBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6607602271D7720092EE66 /* IncomeEditBackBtn.swift */; };
+		2C6607632271E6A70092EE66 /* IncomeEditLabelCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6607622271E6A70092EE66 /* IncomeEditLabelCategory.swift */; };
+		2C6607652271F2DC0092EE66 /* ChoiceCategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6607642271F2DC0092EE66 /* ChoiceCategoryController.swift */; };
+		2C6B9E1B2268668200620BC3 /* IncomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6B9E1A2268668200620BC3 /* IncomeViewController.swift */; };
+		2C6B9E1D2268751900620BC3 /* IncomeEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6B9E1C2268751900620BC3 /* IncomeEditViewController.swift */; };
+		2C6B9E1F2268EF7E00620BC3 /* IncomeEditDateTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6B9E1E2268EF7E00620BC3 /* IncomeEditDateTextField.swift */; };
+		2C91816C226B1F1600B882CA /* RealmMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C91816B226B1F1600B882CA /* RealmMethods.swift */; };
+		2C91816E226B74F200B882CA /* exCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C91816D226B74F200B882CA /* exCollection.swift */; };
+		2CE92CF322633D8B00B35AB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE92CF222633D8B00B35AB6 /* AppDelegate.swift */; };
+		2CE92CF522633D8B00B35AB6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE92CF422633D8B00B35AB6 /* MainViewController.swift */; };
+		2CE92CFA22633D8E00B35AB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CE92CF922633D8E00B35AB6 /* Assets.xcassets */; };
+		2CE92CFD22633D8E00B35AB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CE92CFB22633D8E00B35AB6 /* LaunchScreen.storyboard */; };
+		525AA87D5F9E0537DD164AAE /* Pods_MoneyDay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B21DFCDA20F532DED75BF8 /* Pods_MoneyDay.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01B21DFCDA20F532DED75BF8 /* Pods_MoneyDay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyDay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C058351226F15C4009A98C1 /* IncomeHeaderForTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeHeaderForTable.swift; sourceTree = "<group>"; };
+		2C1BE0B12269DB4A00A365CA /* IncomeEditLabelMoney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeEditLabelMoney.swift; sourceTree = "<group>"; };
+		2C1BE0B32269DCE700A365CA /* IncomeEditTextFieldMoney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeEditTextFieldMoney.swift; sourceTree = "<group>"; };
+		2C1BE0B52269E0D500A365CA /* IncomeEditLabelComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeEditLabelComment.swift; sourceTree = "<group>"; };
+		2C1BE0B72269E20700A365CA /* IncomeEditTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeEditTextView.swift; sourceTree = "<group>"; };
+		2C1BE0B92269E66400A365CA /* IncomeEditButtonAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeEditButtonAdd.swift; sourceTree = "<group>"; };
+		2C1BE0BD2269FBD600A365CA /* OptionListObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionListObject.swift; sourceTree = "<group>"; };
+		2C4380FC227053F10095D0C8 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		2C4380FE2270548D0095D0C8 /* CommentTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTextView.swift; sourceTree = "<group>"; };
+		2C4381002270580D0095D0C8 /* CommentButtonChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentButtonChange.swift; sourceTree = "<group>"; };
+		2C4C5113226EE84B00F1FB69 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		2C50B6BA226C8EEA008A41D5 /* IncomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeTableViewCell.swift; sourceTree = "<group>"; };
+		2C50BE582269B233000A3452 /* IncomeEditLabelDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeEditLabelDate.swift; sourceTree = "<group>"; };
+		2C578ECD2276D9FB0054D997 /* IncomeEditeCategoryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeEditeCategoryTextField.swift; sourceTree = "<group>"; };
+		2C578ED32276E1940054D997 /* ListCategoryIncome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCategoryIncome.swift; sourceTree = "<group>"; };
+		2C578ED52276F4BF0054D997 /* ChoiceHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceHeader.swift; sourceTree = "<group>"; };
+		2C578ED7227702C50054D997 /* ChoiceCategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceCategoryTableViewCell.swift; sourceTree = "<group>"; };
+		2C65E201226470D100398636 /* ColorNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorNavBar.swift; sourceTree = "<group>"; };
+		2C6607582271BE590092EE66 /* MainBalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBalanceView.swift; sourceTree = "<group>"; };
+		2C66075A2271C69A0092EE66 /* IncomeBackBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeBackBtn.swift; sourceTree = "<group>"; };
+		2C66075C2271CAA60092EE66 /* IncomeAddBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeAddBtn.swift; sourceTree = "<group>"; };
+		2C66075E2271D0230092EE66 /* labelCommentChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = labelCommentChange.swift; sourceTree = "<group>"; };
+		2C6607602271D7720092EE66 /* IncomeEditBackBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeEditBackBtn.swift; sourceTree = "<group>"; };
+		2C6607622271E6A70092EE66 /* IncomeEditLabelCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeEditLabelCategory.swift; sourceTree = "<group>"; };
+		2C6607642271F2DC0092EE66 /* ChoiceCategoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceCategoryController.swift; sourceTree = "<group>"; };
+		2C6B9E1A2268668200620BC3 /* IncomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeViewController.swift; sourceTree = "<group>"; };
+		2C6B9E1C2268751900620BC3 /* IncomeEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeEditViewController.swift; sourceTree = "<group>"; };
+		2C6B9E1E2268EF7E00620BC3 /* IncomeEditDateTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeEditDateTextField.swift; sourceTree = "<group>"; };
+		2C91816B226B1F1600B882CA /* RealmMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmMethods.swift; sourceTree = "<group>"; };
+		2C91816D226B74F200B882CA /* exCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exCollection.swift; sourceTree = "<group>"; };
+		2CE92CEF22633D8B00B35AB6 /* MoneyDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CE92CF222633D8B00B35AB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2CE92CF422633D8B00B35AB6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2CE92CF922633D8E00B35AB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2CE92CFC22633D8E00B35AB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2CE92CFE22633D8E00B35AB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47AEF9E5810EF9F9F7D98DCE /* Pods-MoneyDay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyDay.release.xcconfig"; path = "Target Support Files/Pods-MoneyDay/Pods-MoneyDay.release.xcconfig"; sourceTree = "<group>"; };
+		762AE3C7AF55B9D7355AE8AE /* Pods-MoneyDay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyDay.debug.xcconfig"; path = "Target Support Files/Pods-MoneyDay/Pods-MoneyDay.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CE92CEC22633D8B00B35AB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				525AA87D5F9E0537DD164AAE /* Pods_MoneyDay.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C02C79D2264AEF5002228E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C578ED32276E1940054D997 /* ListCategoryIncome.swift */,
+				2C1BE0BD2269FBD600A365CA /* OptionListObject.swift */,
+				2C91816D226B74F200B882CA /* exCollection.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2C02C79E2264AF27002228E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C66076A2271FFBA0092EE66 /* ChoiceCategoryController */,
+				2C6607692271FF690092EE66 /* CommentViewController */,
+				2C6607682271FF020092EE66 /* IncomeEditViewController */,
+				2C6607672271FE250092EE66 /* IncomeViewCotroller */,
+				2C6607662271FE0B0092EE66 /* MainViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C02C79F2264AF2E002228E3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2CE92CF422633D8B00B35AB6 /* MainViewController.swift */,
+				2C6B9E1A2268668200620BC3 /* IncomeViewController.swift */,
+				2C6B9E1C2268751900620BC3 /* IncomeEditViewController.swift */,
+				2C4380FC227053F10095D0C8 /* CommentViewController.swift */,
+				2C6607642271F2DC0092EE66 /* ChoiceCategoryController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2C02C7A02264AF44002228E3 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				2CE92CF222633D8B00B35AB6 /* AppDelegate.swift */,
+				2CE92CF922633D8E00B35AB6 /* Assets.xcassets */,
+				2CE92CFB22633D8E00B35AB6 /* LaunchScreen.storyboard */,
+				2C91816B226B1F1600B882CA /* RealmMethods.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		2C1BE0C1226A470200A365CA /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		2C65E203226470D900398636 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				2C65E201226470D100398636 /* ColorNavBar.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		2C6607662271FE0B0092EE66 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2C4C5113226EE84B00F1FB69 /* MainView.swift */,
+				2C6607582271BE590092EE66 /* MainBalanceView.swift */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		2C6607672271FE250092EE66 /* IncomeViewCotroller */ = {
+			isa = PBXGroup;
+			children = (
+				2C058351226F15C4009A98C1 /* IncomeHeaderForTable.swift */,
+				2C66075C2271CAA60092EE66 /* IncomeAddBtn.swift */,
+				2C66075A2271C69A0092EE66 /* IncomeBackBtn.swift */,
+				2C50B6BA226C8EEA008A41D5 /* IncomeTableViewCell.swift */,
+			);
+			path = IncomeViewCotroller;
+			sourceTree = "<group>";
+		};
+		2C6607682271FF020092EE66 /* IncomeEditViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2C1BE0B12269DB4A00A365CA /* IncomeEditLabelMoney.swift */,
+				2C50BE582269B233000A3452 /* IncomeEditLabelDate.swift */,
+				2C6B9E1E2268EF7E00620BC3 /* IncomeEditDateTextField.swift */,
+				2C1BE0B32269DCE700A365CA /* IncomeEditTextFieldMoney.swift */,
+				2C1BE0B52269E0D500A365CA /* IncomeEditLabelComment.swift */,
+				2C1BE0B72269E20700A365CA /* IncomeEditTextView.swift */,
+				2C1BE0B92269E66400A365CA /* IncomeEditButtonAdd.swift */,
+				2C6607602271D7720092EE66 /* IncomeEditBackBtn.swift */,
+				2C6607622271E6A70092EE66 /* IncomeEditLabelCategory.swift */,
+				2C578ECD2276D9FB0054D997 /* IncomeEditeCategoryTextField.swift */,
+			);
+			path = IncomeEditViewController;
+			sourceTree = "<group>";
+		};
+		2C6607692271FF690092EE66 /* CommentViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2C66075E2271D0230092EE66 /* labelCommentChange.swift */,
+				2C4381002270580D0095D0C8 /* CommentButtonChange.swift */,
+				2C4380FE2270548D0095D0C8 /* CommentTextView.swift */,
+			);
+			path = CommentViewController;
+			sourceTree = "<group>";
+		};
+		2C66076A2271FFBA0092EE66 /* ChoiceCategoryController */ = {
+			isa = PBXGroup;
+			children = (
+				2C578ED52276F4BF0054D997 /* ChoiceHeader.swift */,
+				2C578ED7227702C50054D997 /* ChoiceCategoryTableViewCell.swift */,
+			);
+			path = ChoiceCategoryController;
+			sourceTree = "<group>";
+		};
+		2CE92CE622633D8B00B35AB6 = {
+			isa = PBXGroup;
+			children = (
+				2CE92CF122633D8B00B35AB6 /* MoneyDay */,
+				2CE92CF022633D8B00B35AB6 /* Products */,
+				ED3EFCF3FCB0E84A90389E9F /* Pods */,
+				6CC0946AEA12219FCC27C9F0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2CE92CF022633D8B00B35AB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CE92CEF22633D8B00B35AB6 /* MoneyDay.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CE92CF122633D8B00B35AB6 /* MoneyDay */ = {
+			isa = PBXGroup;
+			children = (
+				2CE92CFE22633D8E00B35AB6 /* Info.plist */,
+				2C1BE0C1226A470200A365CA /* Protocol */,
+				2C02C7A02264AF44002228E3 /* Other */,
+				2C02C79F2264AF2E002228E3 /* Controller */,
+				2C02C79E2264AF27002228E3 /* View */,
+				2C02C79D2264AEF5002228E3 /* Model */,
+				2C65E203226470D900398636 /* Color */,
+			);
+			path = MoneyDay;
+			sourceTree = "<group>";
+		};
+		6CC0946AEA12219FCC27C9F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01B21DFCDA20F532DED75BF8 /* Pods_MoneyDay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED3EFCF3FCB0E84A90389E9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				762AE3C7AF55B9D7355AE8AE /* Pods-MoneyDay.debug.xcconfig */,
+				47AEF9E5810EF9F9F7D98DCE /* Pods-MoneyDay.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2CE92CEE22633D8B00B35AB6 /* MoneyDay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CE92D0122633D8E00B35AB6 /* Build configuration list for PBXNativeTarget "MoneyDay" */;
+			buildPhases = (
+				54ED82924CC8B7B00A304D1F /* [CP] Check Pods Manifest.lock */,
+				2CE92CEB22633D8B00B35AB6 /* Sources */,
+				2CE92CEC22633D8B00B35AB6 /* Frameworks */,
+				2CE92CED22633D8B00B35AB6 /* Resources */,
+				BD636ACC8CBC5C715A4FAE41 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoneyDay;
+			productName = MoneyDay;
+			productReference = 2CE92CEF22633D8B00B35AB6 /* MoneyDay.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2CE92CE722633D8B00B35AB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = ivan;
+				TargetAttributes = {
+					2CE92CEE22633D8B00B35AB6 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 2CE92CEA22633D8B00B35AB6 /* Build configuration list for PBXProject "MoneyDay" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2CE92CE622633D8B00B35AB6;
+			productRefGroup = 2CE92CF022633D8B00B35AB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2CE92CEE22633D8B00B35AB6 /* MoneyDay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2CE92CED22633D8B00B35AB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CE92CFD22633D8E00B35AB6 /* LaunchScreen.storyboard in Resources */,
+				2CE92CFA22633D8E00B35AB6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54ED82924CC8B7B00A304D1F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoneyDay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD636ACC8CBC5C715A4FAE41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MoneyDay/Pods-MoneyDay-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MoneyDay/Pods-MoneyDay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CE92CEB22633D8B00B35AB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C058352226F15C4009A98C1 /* IncomeHeaderForTable.swift in Sources */,
+				2C1BE0BE2269FBD600A365CA /* OptionListObject.swift in Sources */,
+				2C6607612271D7720092EE66 /* IncomeEditBackBtn.swift in Sources */,
+				2C6607592271BE590092EE66 /* MainBalanceView.swift in Sources */,
+				2C4C5114226EE84B00F1FB69 /* MainView.swift in Sources */,
+				2C1BE0B82269E20700A365CA /* IncomeEditTextView.swift in Sources */,
+				2C50B6BB226C8EEA008A41D5 /* IncomeTableViewCell.swift in Sources */,
+				2C66075B2271C69A0092EE66 /* IncomeBackBtn.swift in Sources */,
+				2C91816C226B1F1600B882CA /* RealmMethods.swift in Sources */,
+				2C1BE0B42269DCE700A365CA /* IncomeEditTextFieldMoney.swift in Sources */,
+				2C1BE0B62269E0D500A365CA /* IncomeEditLabelComment.swift in Sources */,
+				2C578ED62276F4BF0054D997 /* ChoiceHeader.swift in Sources */,
+				2C66075F2271D0230092EE66 /* labelCommentChange.swift in Sources */,
+				2C6B9E1F2268EF7E00620BC3 /* IncomeEditDateTextField.swift in Sources */,
+				2C50BE592269B233000A3452 /* IncomeEditLabelDate.swift in Sources */,
+				2C6B9E1B2268668200620BC3 /* IncomeViewController.swift in Sources */,
+				2C578ED42276E1940054D997 /* ListCategoryIncome.swift in Sources */,
+				2C1BE0BA2269E66400A365CA /* IncomeEditButtonAdd.swift in Sources */,
+				2C66075D2271CAA60092EE66 /* IncomeAddBtn.swift in Sources */,
+				2C578ECE2276D9FB0054D997 /* IncomeEditeCategoryTextField.swift in Sources */,
+				2C6607632271E6A70092EE66 /* IncomeEditLabelCategory.swift in Sources */,
+				2C4380FD227053F10095D0C8 /* CommentViewController.swift in Sources */,
+				2CE92CF522633D8B00B35AB6 /* MainViewController.swift in Sources */,
+				2C91816E226B74F200B882CA /* exCollection.swift in Sources */,
+				2C578ED8227702C50054D997 /* ChoiceCategoryTableViewCell.swift in Sources */,
+				2CE92CF322633D8B00B35AB6 /* AppDelegate.swift in Sources */,
+				2C1BE0B22269DB4A00A365CA /* IncomeEditLabelMoney.swift in Sources */,
+				2C65E202226470D100398636 /* ColorNavBar.swift in Sources */,
+				2C6B9E1D2268751900620BC3 /* IncomeEditViewController.swift in Sources */,
+				2C4381012270580D0095D0C8 /* CommentButtonChange.swift in Sources */,
+				2C6607652271F2DC0092EE66 /* ChoiceCategoryController.swift in Sources */,
+				2C4380FF2270548D0095D0C8 /* CommentTextView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2CE92CFB22633D8E00B35AB6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CE92CFC22633D8E00B35AB6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2CE92CFF22633D8E00B35AB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2CE92D0022633D8E00B35AB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2CE92D0222633D8E00B35AB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 762AE3C7AF55B9D7355AE8AE /* Pods-MoneyDay.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = MoneyDay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.MoneyDay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2CE92D0322633D8E00B35AB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47AEF9E5810EF9F9F7D98DCE /* Pods-MoneyDay.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = MoneyDay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.MoneyDay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CE92CEA22633D8B00B35AB6 /* Build configuration list for PBXProject "MoneyDay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CE92CFF22633D8E00B35AB6 /* Debug */,
+				2CE92D0022633D8E00B35AB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CE92D0122633D8E00B35AB6 /* Build configuration list for PBXNativeTarget "MoneyDay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CE92D0222633D8E00B35AB6 /* Debug */,
+				2CE92D0322633D8E00B35AB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2CE92CE722633D8B00B35AB6 /* Project object */;
+}
