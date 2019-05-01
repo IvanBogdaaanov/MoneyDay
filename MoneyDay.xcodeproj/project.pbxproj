@@ -35,9 +35,34 @@
 		2C6B9E1B2268668200620BC3 /* IncomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6B9E1A2268668200620BC3 /* IncomeViewController.swift */; };
 		2C6B9E1D2268751900620BC3 /* IncomeEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6B9E1C2268751900620BC3 /* IncomeEditViewController.swift */; };
 		2C6B9E1F2268EF7E00620BC3 /* IncomeEditDateTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6B9E1E2268EF7E00620BC3 /* IncomeEditDateTextField.swift */; };
+		2C79D5902279ACC8007E33DE /* CostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C79D58F2279ACC8007E33DE /* CostsViewController.swift */; };
+		2C79D5932279AD46007E33DE /* HeaderCosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C79D5922279AD46007E33DE /* HeaderCosts.swift */; };
+		2C79D5952279ADE1007E33DE /* CostsAddBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C79D5942279ADE1007E33DE /* CostsAddBtn.swift */; };
+		2C79D5972279AE02007E33DE /* CostsBackBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C79D5962279AE02007E33DE /* CostsBackBtn.swift */; };
+		2C79D59A2279B0D3007E33DE /* ListCategoryCosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C79D5992279B0D3007E33DE /* ListCategoryCosts.swift */; };
+		2C79D59C2279B114007E33DE /* OptionListObjectCosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C79D59B2279B114007E33DE /* OptionListObjectCosts.swift */; };
+		2C79D59E2279B28E007E33DE /* CostsEditInTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C79D59D2279B28E007E33DE /* CostsEditInTableViewController.swift */; };
+		2C79D5A22279B3EB007E33DE /* CostsBtnBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C79D5A12279B3EB007E33DE /* CostsBtnBack.swift */; };
+		2C79D5A42279B414007E33DE /* CostsBtnAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C79D5A32279B414007E33DE /* CostsBtnAdd.swift */; };
+		2C79D5A62279B44F007E33DE /* CostsEditDateTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C79D5A52279B44F007E33DE /* CostsEditDateTextField.swift */; };
+		2C79D5A82279B47E007E33DE /* CostsEditeCategoryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C79D5A72279B47E007E33DE /* CostsEditeCategoryTextField.swift */; };
+		2C79D5AA2279B4FB007E33DE /* CostsEditLabelCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C79D5A92279B4FB007E33DE /* CostsEditLabelCategory.swift */; };
+		2C79D5AC2279B53C007E33DE /* CostsEditLabelComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C79D5AB2279B53C007E33DE /* CostsEditLabelComment.swift */; };
+		2C79D5AE2279B56D007E33DE /* CostsEditLabelDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C79D5AD2279B56D007E33DE /* CostsEditLabelDate.swift */; };
+		2C79D5B02279B599007E33DE /* CostsEditLabelMoney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C79D5AF2279B599007E33DE /* CostsEditLabelMoney.swift */; };
+		2C79D5B22279B5BF007E33DE /* CostsEditTextFieldMoney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C79D5B12279B5BF007E33DE /* CostsEditTextFieldMoney.swift */; };
+		2C79D5B42279B5F2007E33DE /* CostsEditTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C79D5B32279B5F2007E33DE /* CostsEditTextView.swift */; };
 		2C91816C226B1F1600B882CA /* RealmMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C91816B226B1F1600B882CA /* RealmMethods.swift */; };
 		2C91816E226B74F200B882CA /* exCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C91816D226B74F200B882CA /* exCollection.swift */; };
 		2CD531F1227834F500997230 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 2CD531F0227834F500997230 /* .gitignore */; };
+		2CE21A432279BE2800199CE8 /* ChoiceCategoryCosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE21A422279BE2800199CE8 /* ChoiceCategoryCosts.swift */; };
+		2CE21A462279BF4F00199CE8 /* ChoiceCategoryTableViewCellCosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE21A452279BF4F00199CE8 /* ChoiceCategoryTableViewCellCosts.swift */; };
+		2CE21A482279C06000199CE8 /* CostsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE21A472279C06000199CE8 /* CostsTableViewCell.swift */; };
+		2CE21A4A2279C17E00199CE8 /* CostsComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE21A492279C17E00199CE8 /* CostsComment.swift */; };
+		2CE21A4D2279C1DB00199CE8 /* labelCommentCosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE21A4C2279C1DB00199CE8 /* labelCommentCosts.swift */; };
+		2CE21A4F2279C22600199CE8 /* CommentBtnCosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE21A4E2279C22600199CE8 /* CommentBtnCosts.swift */; };
+		2CE21A512279C26D00199CE8 /* CommentCostsTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE21A502279C26D00199CE8 /* CommentCostsTextView.swift */; };
+		2CE21A532279C59700199CE8 /* ChoiceHeaderCosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE21A522279C59700199CE8 /* ChoiceHeaderCosts.swift */; };
 		2CE92CF322633D8B00B35AB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE92CF222633D8B00B35AB6 /* AppDelegate.swift */; };
 		2CE92CF522633D8B00B35AB6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE92CF422633D8B00B35AB6 /* MainViewController.swift */; };
 		2CE92CFA22633D8E00B35AB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CE92CF922633D8E00B35AB6 /* Assets.xcassets */; };
@@ -75,9 +100,34 @@
 		2C6B9E1A2268668200620BC3 /* IncomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeViewController.swift; sourceTree = "<group>"; };
 		2C6B9E1C2268751900620BC3 /* IncomeEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeEditViewController.swift; sourceTree = "<group>"; };
 		2C6B9E1E2268EF7E00620BC3 /* IncomeEditDateTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeEditDateTextField.swift; sourceTree = "<group>"; };
+		2C79D58F2279ACC8007E33DE /* CostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostsViewController.swift; sourceTree = "<group>"; };
+		2C79D5922279AD46007E33DE /* HeaderCosts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCosts.swift; sourceTree = "<group>"; };
+		2C79D5942279ADE1007E33DE /* CostsAddBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostsAddBtn.swift; sourceTree = "<group>"; };
+		2C79D5962279AE02007E33DE /* CostsBackBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostsBackBtn.swift; sourceTree = "<group>"; };
+		2C79D5992279B0D3007E33DE /* ListCategoryCosts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCategoryCosts.swift; sourceTree = "<group>"; };
+		2C79D59B2279B114007E33DE /* OptionListObjectCosts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionListObjectCosts.swift; sourceTree = "<group>"; };
+		2C79D59D2279B28E007E33DE /* CostsEditInTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostsEditInTableViewController.swift; sourceTree = "<group>"; };
+		2C79D5A12279B3EB007E33DE /* CostsBtnBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostsBtnBack.swift; sourceTree = "<group>"; };
+		2C79D5A32279B414007E33DE /* CostsBtnAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostsBtnAdd.swift; sourceTree = "<group>"; };
+		2C79D5A52279B44F007E33DE /* CostsEditDateTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostsEditDateTextField.swift; sourceTree = "<group>"; };
+		2C79D5A72279B47E007E33DE /* CostsEditeCategoryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostsEditeCategoryTextField.swift; sourceTree = "<group>"; };
+		2C79D5A92279B4FB007E33DE /* CostsEditLabelCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostsEditLabelCategory.swift; sourceTree = "<group>"; };
+		2C79D5AB2279B53C007E33DE /* CostsEditLabelComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostsEditLabelComment.swift; sourceTree = "<group>"; };
+		2C79D5AD2279B56D007E33DE /* CostsEditLabelDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostsEditLabelDate.swift; sourceTree = "<group>"; };
+		2C79D5AF2279B599007E33DE /* CostsEditLabelMoney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostsEditLabelMoney.swift; sourceTree = "<group>"; };
+		2C79D5B12279B5BF007E33DE /* CostsEditTextFieldMoney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostsEditTextFieldMoney.swift; sourceTree = "<group>"; };
+		2C79D5B32279B5F2007E33DE /* CostsEditTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostsEditTextView.swift; sourceTree = "<group>"; };
 		2C91816B226B1F1600B882CA /* RealmMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmMethods.swift; sourceTree = "<group>"; };
 		2C91816D226B74F200B882CA /* exCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exCollection.swift; sourceTree = "<group>"; };
 		2CD531F0227834F500997230 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		2CE21A422279BE2800199CE8 /* ChoiceCategoryCosts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceCategoryCosts.swift; sourceTree = "<group>"; };
+		2CE21A452279BF4F00199CE8 /* ChoiceCategoryTableViewCellCosts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceCategoryTableViewCellCosts.swift; sourceTree = "<group>"; };
+		2CE21A472279C06000199CE8 /* CostsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostsTableViewCell.swift; sourceTree = "<group>"; };
+		2CE21A492279C17E00199CE8 /* CostsComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostsComment.swift; sourceTree = "<group>"; };
+		2CE21A4C2279C1DB00199CE8 /* labelCommentCosts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = labelCommentCosts.swift; sourceTree = "<group>"; };
+		2CE21A4E2279C22600199CE8 /* CommentBtnCosts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentBtnCosts.swift; sourceTree = "<group>"; };
+		2CE21A502279C26D00199CE8 /* CommentCostsTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCostsTextView.swift; sourceTree = "<group>"; };
+		2CE21A522279C59700199CE8 /* ChoiceHeaderCosts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceHeaderCosts.swift; sourceTree = "<group>"; };
 		2CE92CEF22633D8B00B35AB6 /* MoneyDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CE92CF222633D8B00B35AB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CE92CF422633D8B00B35AB6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -103,9 +153,9 @@
 		2C02C79D2264AEF5002228E3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2C91816D226B74F200B882CA /* exCollection.swift */,
 				2C578ED32276E1940054D997 /* ListCategoryIncome.swift */,
 				2C1BE0BD2269FBD600A365CA /* OptionListObject.swift */,
-				2C91816D226B74F200B882CA /* exCollection.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -126,10 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				2CE92CF422633D8B00B35AB6 /* MainViewController.swift */,
-				2C6B9E1A2268668200620BC3 /* IncomeViewController.swift */,
-				2C6B9E1C2268751900620BC3 /* IncomeEditViewController.swift */,
-				2C4380FC227053F10095D0C8 /* CommentViewController.swift */,
-				2C6607642271F2DC0092EE66 /* ChoiceCategoryController.swift */,
+				2C79D58E2279AC6F007E33DE /* Costs */,
+				2C79D58D2279AC24007E33DE /* Income */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -183,16 +231,16 @@
 		2C6607682271FF020092EE66 /* IncomeEditViewController */ = {
 			isa = PBXGroup;
 			children = (
-				2C1BE0B12269DB4A00A365CA /* IncomeEditLabelMoney.swift */,
-				2C50BE582269B233000A3452 /* IncomeEditLabelDate.swift */,
-				2C6B9E1E2268EF7E00620BC3 /* IncomeEditDateTextField.swift */,
-				2C1BE0B32269DCE700A365CA /* IncomeEditTextFieldMoney.swift */,
-				2C1BE0B52269E0D500A365CA /* IncomeEditLabelComment.swift */,
-				2C1BE0B72269E20700A365CA /* IncomeEditTextView.swift */,
-				2C1BE0B92269E66400A365CA /* IncomeEditButtonAdd.swift */,
 				2C6607602271D7720092EE66 /* IncomeEditBackBtn.swift */,
-				2C6607622271E6A70092EE66 /* IncomeEditLabelCategory.swift */,
+				2C1BE0B92269E66400A365CA /* IncomeEditButtonAdd.swift */,
+				2C6B9E1E2268EF7E00620BC3 /* IncomeEditDateTextField.swift */,
 				2C578ECD2276D9FB0054D997 /* IncomeEditeCategoryTextField.swift */,
+				2C6607622271E6A70092EE66 /* IncomeEditLabelCategory.swift */,
+				2C1BE0B52269E0D500A365CA /* IncomeEditLabelComment.swift */,
+				2C50BE582269B233000A3452 /* IncomeEditLabelDate.swift */,
+				2C1BE0B12269DB4A00A365CA /* IncomeEditLabelMoney.swift */,
+				2C1BE0B32269DCE700A365CA /* IncomeEditTextFieldMoney.swift */,
+				2C1BE0B72269E20700A365CA /* IncomeEditTextView.swift */,
 			);
 			path = IncomeEditViewController;
 			sourceTree = "<group>";
@@ -214,6 +262,99 @@
 				2C578ED7227702C50054D997 /* ChoiceCategoryTableViewCell.swift */,
 			);
 			path = ChoiceCategoryController;
+			sourceTree = "<group>";
+		};
+		2C79D58D2279AC24007E33DE /* Income */ = {
+			isa = PBXGroup;
+			children = (
+				2C02C79D2264AEF5002228E3 /* Model */,
+				2C02C79E2264AF27002228E3 /* View */,
+				2C6B9E1A2268668200620BC3 /* IncomeViewController.swift */,
+				2C6B9E1C2268751900620BC3 /* IncomeEditViewController.swift */,
+				2C4380FC227053F10095D0C8 /* CommentViewController.swift */,
+				2C6607642271F2DC0092EE66 /* ChoiceCategoryController.swift */,
+			);
+			path = Income;
+			sourceTree = "<group>";
+		};
+		2C79D58E2279AC6F007E33DE /* Costs */ = {
+			isa = PBXGroup;
+			children = (
+				2C79D5982279B0A5007E33DE /* Model */,
+				2C79D5912279AD20007E33DE /* View */,
+				2C79D58F2279ACC8007E33DE /* CostsViewController.swift */,
+				2CE21A492279C17E00199CE8 /* CostsComment.swift */,
+				2C79D59D2279B28E007E33DE /* CostsEditInTableViewController.swift */,
+				2CE21A422279BE2800199CE8 /* ChoiceCategoryCosts.swift */,
+			);
+			path = Costs;
+			sourceTree = "<group>";
+		};
+		2C79D5912279AD20007E33DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2CE21A4B2279C1BB00199CE8 /* comment */,
+				2CE21A442279BF3300199CE8 /* categoy */,
+				2C79D5A02279B2EE007E33DE /* edit */,
+				2C79D59F2279B2E0007E33DE /* main */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C79D5982279B0A5007E33DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C79D5992279B0D3007E33DE /* ListCategoryCosts.swift */,
+				2C79D59B2279B114007E33DE /* OptionListObjectCosts.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2C79D59F2279B2E0007E33DE /* main */ = {
+			isa = PBXGroup;
+			children = (
+				2C79D5962279AE02007E33DE /* CostsBackBtn.swift */,
+				2C79D5942279ADE1007E33DE /* CostsAddBtn.swift */,
+				2C79D5922279AD46007E33DE /* HeaderCosts.swift */,
+				2CE21A472279C06000199CE8 /* CostsTableViewCell.swift */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		2C79D5A02279B2EE007E33DE /* edit */ = {
+			isa = PBXGroup;
+			children = (
+				2C79D5A12279B3EB007E33DE /* CostsBtnBack.swift */,
+				2C79D5A32279B414007E33DE /* CostsBtnAdd.swift */,
+				2C79D5A52279B44F007E33DE /* CostsEditDateTextField.swift */,
+				2C79D5A72279B47E007E33DE /* CostsEditeCategoryTextField.swift */,
+				2C79D5A92279B4FB007E33DE /* CostsEditLabelCategory.swift */,
+				2C79D5AB2279B53C007E33DE /* CostsEditLabelComment.swift */,
+				2C79D5AD2279B56D007E33DE /* CostsEditLabelDate.swift */,
+				2C79D5AF2279B599007E33DE /* CostsEditLabelMoney.swift */,
+				2C79D5B12279B5BF007E33DE /* CostsEditTextFieldMoney.swift */,
+				2C79D5B32279B5F2007E33DE /* CostsEditTextView.swift */,
+			);
+			path = edit;
+			sourceTree = "<group>";
+		};
+		2CE21A442279BF3300199CE8 /* categoy */ = {
+			isa = PBXGroup;
+			children = (
+				2CE21A452279BF4F00199CE8 /* ChoiceCategoryTableViewCellCosts.swift */,
+				2CE21A522279C59700199CE8 /* ChoiceHeaderCosts.swift */,
+			);
+			path = categoy;
+			sourceTree = "<group>";
+		};
+		2CE21A4B2279C1BB00199CE8 /* comment */ = {
+			isa = PBXGroup;
+			children = (
+				2CE21A4C2279C1DB00199CE8 /* labelCommentCosts.swift */,
+				2CE21A4E2279C22600199CE8 /* CommentBtnCosts.swift */,
+				2CE21A502279C26D00199CE8 /* CommentCostsTextView.swift */,
+			);
+			path = comment;
 			sourceTree = "<group>";
 		};
 		2CE92CE622633D8B00B35AB6 = {
@@ -242,8 +383,6 @@
 				2C1BE0C1226A470200A365CA /* Protocol */,
 				2C02C7A02264AF44002228E3 /* Other */,
 				2C02C79F2264AF2E002228E3 /* Controller */,
-				2C02C79E2264AF27002228E3 /* View */,
-				2C02C79D2264AEF5002228E3 /* Model */,
 				2C65E203226470D900398636 /* Color */,
 			);
 			path = MoneyDay;
@@ -389,36 +528,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C058352226F15C4009A98C1 /* IncomeHeaderForTable.swift in Sources */,
+				2C79D5902279ACC8007E33DE /* CostsViewController.swift in Sources */,
 				2C1BE0BE2269FBD600A365CA /* OptionListObject.swift in Sources */,
+				2C79D5AA2279B4FB007E33DE /* CostsEditLabelCategory.swift in Sources */,
 				2C6607612271D7720092EE66 /* IncomeEditBackBtn.swift in Sources */,
+				2CE21A4F2279C22600199CE8 /* CommentBtnCosts.swift in Sources */,
 				2C6607592271BE590092EE66 /* MainBalanceView.swift in Sources */,
+				2C79D5A42279B414007E33DE /* CostsBtnAdd.swift in Sources */,
 				2C4C5114226EE84B00F1FB69 /* MainView.swift in Sources */,
 				2C1BE0B82269E20700A365CA /* IncomeEditTextView.swift in Sources */,
+				2C79D5AE2279B56D007E33DE /* CostsEditLabelDate.swift in Sources */,
 				2C50B6BB226C8EEA008A41D5 /* IncomeTableViewCell.swift in Sources */,
+				2C79D5B22279B5BF007E33DE /* CostsEditTextFieldMoney.swift in Sources */,
 				2C66075B2271C69A0092EE66 /* IncomeBackBtn.swift in Sources */,
+				2CE21A462279BF4F00199CE8 /* ChoiceCategoryTableViewCellCosts.swift in Sources */,
+				2C79D5B02279B599007E33DE /* CostsEditLabelMoney.swift in Sources */,
+				2C79D5A82279B47E007E33DE /* CostsEditeCategoryTextField.swift in Sources */,
 				2C91816C226B1F1600B882CA /* RealmMethods.swift in Sources */,
 				2C1BE0B42269DCE700A365CA /* IncomeEditTextFieldMoney.swift in Sources */,
+				2CE21A532279C59700199CE8 /* ChoiceHeaderCosts.swift in Sources */,
+				2C79D59A2279B0D3007E33DE /* ListCategoryCosts.swift in Sources */,
 				2C1BE0B62269E0D500A365CA /* IncomeEditLabelComment.swift in Sources */,
 				2C578ED62276F4BF0054D997 /* ChoiceHeader.swift in Sources */,
+				2C79D5A22279B3EB007E33DE /* CostsBtnBack.swift in Sources */,
 				2C66075F2271D0230092EE66 /* labelCommentChange.swift in Sources */,
+				2C79D5972279AE02007E33DE /* CostsBackBtn.swift in Sources */,
 				2C6B9E1F2268EF7E00620BC3 /* IncomeEditDateTextField.swift in Sources */,
+				2C79D5AC2279B53C007E33DE /* CostsEditLabelComment.swift in Sources */,
 				2C50BE592269B233000A3452 /* IncomeEditLabelDate.swift in Sources */,
 				2C6B9E1B2268668200620BC3 /* IncomeViewController.swift in Sources */,
 				2C578ED42276E1940054D997 /* ListCategoryIncome.swift in Sources */,
 				2C1BE0BA2269E66400A365CA /* IncomeEditButtonAdd.swift in Sources */,
 				2C66075D2271CAA60092EE66 /* IncomeAddBtn.swift in Sources */,
 				2C578ECE2276D9FB0054D997 /* IncomeEditeCategoryTextField.swift in Sources */,
+				2C79D5932279AD46007E33DE /* HeaderCosts.swift in Sources */,
 				2C6607632271E6A70092EE66 /* IncomeEditLabelCategory.swift in Sources */,
+				2CE21A432279BE2800199CE8 /* ChoiceCategoryCosts.swift in Sources */,
 				2C4380FD227053F10095D0C8 /* CommentViewController.swift in Sources */,
 				2CE92CF522633D8B00B35AB6 /* MainViewController.swift in Sources */,
 				2C91816E226B74F200B882CA /* exCollection.swift in Sources */,
 				2C578ED8227702C50054D997 /* ChoiceCategoryTableViewCell.swift in Sources */,
 				2CE92CF322633D8B00B35AB6 /* AppDelegate.swift in Sources */,
+				2C79D5A62279B44F007E33DE /* CostsEditDateTextField.swift in Sources */,
+				2CE21A4A2279C17E00199CE8 /* CostsComment.swift in Sources */,
+				2C79D59C2279B114007E33DE /* OptionListObjectCosts.swift in Sources */,
+				2CE21A4D2279C1DB00199CE8 /* labelCommentCosts.swift in Sources */,
 				2C1BE0B22269DB4A00A365CA /* IncomeEditLabelMoney.swift in Sources */,
+				2C79D5B42279B5F2007E33DE /* CostsEditTextView.swift in Sources */,
+				2C79D5952279ADE1007E33DE /* CostsAddBtn.swift in Sources */,
 				2C65E202226470D100398636 /* ColorNavBar.swift in Sources */,
 				2C6B9E1D2268751900620BC3 /* IncomeEditViewController.swift in Sources */,
+				2CE21A512279C26D00199CE8 /* CommentCostsTextView.swift in Sources */,
 				2C4381012270580D0095D0C8 /* CommentButtonChange.swift in Sources */,
 				2C6607652271F2DC0092EE66 /* ChoiceCategoryController.swift in Sources */,
+				2C79D59E2279B28E007E33DE /* CostsEditInTableViewController.swift in Sources */,
+				2CE21A482279C06000199CE8 /* CostsTableViewCell.swift in Sources */,
 				2C4380FF2270548D0095D0C8 /* CommentTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

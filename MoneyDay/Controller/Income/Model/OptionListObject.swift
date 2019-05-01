@@ -30,11 +30,6 @@ class OptionListObject: Object {
         self.MoneyEdit = money
         self.totalMoney = totalScore
         
-        let components = Calendar.current.dateComponents([.day, .month, .year], from: date)
-        
-        self.day = components.day!
-        self.month = components.month!
-        self.year = components.year!
     }
 }
 

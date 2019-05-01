@@ -20,11 +20,36 @@ class RealmMethods {
         return Array(objects)
     }
     
+    func getListCosts() -> [OptionListObjectCosts] {
+        
+        let objects = realm.objects(OptionListObjectCosts.self)
+        
+        return Array(objects)
+    }
+    
+    func getCategoryCosts () -> [ListCategoryCosts] {
+        
+        let objects = realm.objects(ListCategoryCosts.self)
+        
+        return Array(objects)
+        
+    }
+    
     func getCategory () -> [ListCategoryIncome] {
         
         let objects = realm.objects(ListCategoryIncome.self)
         
         return Array(objects)
+        
+    }
+    
+    func addInRealmCategoryCosts (_ option: ListCategoryCosts) {
+        
+        try! realm.write {
+            
+            realm.add(option)
+            
+        }
         
     }
     
@@ -36,6 +61,15 @@ class RealmMethods {
             
         }
         
+    }
+    
+    func addInRealmCosts (_ option: OptionListObjectCosts) {
+        
+        try! realm.write {
+            
+            realm.add(option)
+            
+        }
     }
     
     func addInRealm(_ option: OptionListObject) {
@@ -50,6 +84,15 @@ class RealmMethods {
     func updateComment (index: Int, text: String?) {
         
         let objects = realm.objects(OptionListObject.self)
+        
+        try! realm.write {
+            objects[objects.endIndex - 1 - index].Comment = text!
+        }
+    }
+    
+    func updateCommentCosts (index: Int, text: String?) {
+        
+        let objects = realm.objects(OptionListObjectCosts.self)
         
         try! realm.write {
             objects[objects.endIndex - 1 - index].Comment = text!
@@ -89,4 +132,28 @@ class RealmMethods {
         
     }
     
+        func filterDateCosts (min: Date, max: Date) -> [OptionListObjectCosts] {
+        
+        var object = realm.objects(OptionListObjectCosts.self)
+        
+        let component = Calendar.current.dateComponents([.year ,.month , .day, .timeZone, .hour , .minute], from: max)
+        var dateComponents = DateComponents()
+        dateComponents.year = component.year
+        dateComponents.month = component.month
+        dateComponents.timeZone = component.timeZone
+        dateComponents.hour = component.hour
+        dateComponents.minute = component.minute
+        dateComponents.day = component.day! + 1
+        
+        let userCalendar = Calendar.current
+        let maxNew = userCalendar.date(from: dateComponents)
+        
+        object = object.filter("DateAndTime >= %@ ",min)
+        
+        object = object.filter("DateAndTime <= %@ ",maxNew!)
+        
+        
+        return Array(object)
+        
+    }
 }

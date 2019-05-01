@@ -16,10 +16,12 @@ class MainViewController: UIViewController {
     let realmMethods = RealmMethods()
     var money:Double = 0
     var listIncome = [OptionListObject]()
+    var listCosts = [OptionListObjectCosts]()
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        listCosts = realmMethods.getListCosts()
         
         listIncome = realmMethods.getList()
         listIncome.reverse()
@@ -45,6 +47,10 @@ class MainViewController: UIViewController {
         for items in listIncome {
             money += items.totalMoney
         }
+        
+        for items in listCosts {
+            money -= items.totalMoney
+        }
     }
     
     func setupView() {
@@ -67,13 +73,18 @@ class MainViewController: UIViewController {
             
             ])
         
-        mainView.btnIncome.addTarget(self, action: #selector(btnTap), for: .touchUpInside)
+        mainView.btnIncome.addTarget(self, action: #selector(btnIncome(_:)), for: .touchUpInside)
+        mainView.btnCosts.addTarget(self, action: #selector(btnCosts(_:)), for: .touchUpInside)
         
     }
-    @objc func btnTap () {
+    @objc func btnIncome (_ sender: UIButton) {
         let VC = IncomeViewController()
         navigationController?.pushViewController(VC, animated: true)
     }
     
+    @objc func btnCosts (_ sender: UIButton) {
+        let VC = CostsViewController()
+        navigationController?.pushViewController(VC, animated: true)
+    }
 }
 
