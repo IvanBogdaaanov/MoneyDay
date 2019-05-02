@@ -28,9 +28,7 @@ class CostsViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print("costs")
-        
+                
         let imagePNG = UIImage(named: "backgr.png")
         let imageView = UIImageView(image: imagePNG)
         tableView.backgroundView = imageView
@@ -39,6 +37,13 @@ class CostsViewController: UITableViewController {
         
         tableView.allowsSelection = false
         
+        let tapGestureDate = UITapGestureRecognizer(target: self, action: #selector(tapGestureDate(gestureRecognizer:)))
+        view.addGestureRecognizer(tapGestureDate)
+        
+    }
+    
+    @objc func tapGestureDate (gestureRecognizer: UITapGestureRecognizer) {
+        view.endEditing(true)
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -134,7 +134,7 @@ class IncomeHeaderForTable: UIView {
     
 }
 extension IncomeHeaderForTable: UITextFieldDelegate {
-   
+    
     override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
         if minDateTextField.isFirstResponder {
             DispatchQueue.main.async(execute: {

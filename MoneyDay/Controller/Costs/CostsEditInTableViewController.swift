@@ -56,7 +56,6 @@ class CostsEditInTableViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print ("costs")
         
         let imagePNG = UIImage(named: "backgr.png")!
         view.backgroundColor = UIColor(patternImage: imagePNG)

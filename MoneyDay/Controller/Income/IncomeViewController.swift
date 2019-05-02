@@ -38,6 +38,9 @@ class IncomeViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let tapGestureDate = UITapGestureRecognizer(target: self, action: #selector(tapGestureDate(gestureRecognizer:)))
+        view.addGestureRecognizer(tapGestureDate)
+        
         let imagePNG = UIImage(named: "backgr.png")
         let imageView = UIImageView(image: imagePNG)
         tableView.backgroundView = imageView
@@ -53,6 +56,11 @@ class IncomeViewController: UITableViewController {
         for items in object {
             money += items.totalMoney
         }
+    }
+    
+    
+    @objc func tapGestureDate (gestureRecognizer: UITapGestureRecognizer) {
+        view.endEditing(true)
     }
     
     @objc func addTableCell(_ sender: UIButton) {
@@ -155,6 +163,7 @@ class IncomeViewController: UITableViewController {
             
             success(true)
         })
+        
         infoAction.backgroundColor = UIColor.gray
         
         let deleteAction = UIContextualAction(style: .normal, title:  "Удалить", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
@@ -162,6 +171,7 @@ class IncomeViewController: UITableViewController {
             let object = self.listIncome[indexPath.row]
             self.money -= object.totalMoney
             self.realmMethods.deleteOption(object: object)
+            
             self.listIncome = self.realmMethods.getList()
             self.listIncome.reverse()
             tableView.reloadData()

@@ -24,6 +24,13 @@
 		2C578ED42276E1940054D997 /* ListCategoryIncome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C578ED32276E1940054D997 /* ListCategoryIncome.swift */; };
 		2C578ED62276F4BF0054D997 /* ChoiceHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C578ED52276F4BF0054D997 /* ChoiceHeader.swift */; };
 		2C578ED8227702C50054D997 /* ChoiceCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C578ED7227702C50054D997 /* ChoiceCategoryTableViewCell.swift */; };
+		2C5E9DC0227ADBDC007AAD4B /* DiagramIncomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5E9DBF227ADBDC007AAD4B /* DiagramIncomeController.swift */; };
+		2C5E9DC4227ADC93007AAD4B /* DiagramIncomeBackBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5E9DC3227ADC93007AAD4B /* DiagramIncomeBackBtn.swift */; };
+		2C5E9DC6227B0E82007AAD4B /* DiagramIncomeLable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5E9DC5227B0E82007AAD4B /* DiagramIncomeLable.swift */; };
+		2C5E9DC8227B3480007AAD4B /* NextDiagramBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5E9DC7227B3480007AAD4B /* NextDiagramBtn.swift */; };
+		2C5E9DCB227B365C007AAD4B /* DiagramCostsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5E9DCA227B365C007AAD4B /* DiagramCostsController.swift */; };
+		2C5E9DCE227B36EA007AAD4B /* DiagramCostsLable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5E9DCD227B36EA007AAD4B /* DiagramCostsLable.swift */; };
+		2C5E9DD0227B373C007AAD4B /* DiagramCostsBackBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5E9DCF227B373C007AAD4B /* DiagramCostsBackBtn.swift */; };
 		2C65E202226470D100398636 /* ColorNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C65E201226470D100398636 /* ColorNavBar.swift */; };
 		2C6607592271BE590092EE66 /* MainBalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6607582271BE590092EE66 /* MainBalanceView.swift */; };
 		2C66075B2271C69A0092EE66 /* IncomeBackBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C66075A2271C69A0092EE66 /* IncomeBackBtn.swift */; };
@@ -89,6 +96,13 @@
 		2C578ED32276E1940054D997 /* ListCategoryIncome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCategoryIncome.swift; sourceTree = "<group>"; };
 		2C578ED52276F4BF0054D997 /* ChoiceHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceHeader.swift; sourceTree = "<group>"; };
 		2C578ED7227702C50054D997 /* ChoiceCategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceCategoryTableViewCell.swift; sourceTree = "<group>"; };
+		2C5E9DBF227ADBDC007AAD4B /* DiagramIncomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagramIncomeController.swift; sourceTree = "<group>"; };
+		2C5E9DC3227ADC93007AAD4B /* DiagramIncomeBackBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagramIncomeBackBtn.swift; sourceTree = "<group>"; };
+		2C5E9DC5227B0E82007AAD4B /* DiagramIncomeLable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagramIncomeLable.swift; sourceTree = "<group>"; };
+		2C5E9DC7227B3480007AAD4B /* NextDiagramBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextDiagramBtn.swift; sourceTree = "<group>"; };
+		2C5E9DCA227B365C007AAD4B /* DiagramCostsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagramCostsController.swift; sourceTree = "<group>"; };
+		2C5E9DCD227B36EA007AAD4B /* DiagramCostsLable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagramCostsLable.swift; sourceTree = "<group>"; };
+		2C5E9DCF227B373C007AAD4B /* DiagramCostsBackBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagramCostsBackBtn.swift; sourceTree = "<group>"; };
 		2C65E201226470D100398636 /* ColorNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorNavBar.swift; sourceTree = "<group>"; };
 		2C6607582271BE590092EE66 /* MainBalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBalanceView.swift; sourceTree = "<group>"; };
 		2C66075A2271C69A0092EE66 /* IncomeBackBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeBackBtn.swift; sourceTree = "<group>"; };
@@ -175,6 +189,7 @@
 		2C02C79F2264AF2E002228E3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2C5E9DBE227ADB9C007AAD4B /* Diagrams */,
 				2CE92CF422633D8B00B35AB6 /* MainViewController.swift */,
 				2C79D58E2279AC6F007E33DE /* Costs */,
 				2C79D58D2279AC24007E33DE /* Income */,
@@ -198,6 +213,52 @@
 			children = (
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		2C5E9DBE227ADB9C007AAD4B /* Diagrams */ = {
+			isa = PBXGroup;
+			children = (
+				2C5E9DC9227B3635007AAD4B /* Costs */,
+				2C5E9DC1227ADC57007AAD4B /* Income */,
+			);
+			path = Diagrams;
+			sourceTree = "<group>";
+		};
+		2C5E9DC1227ADC57007AAD4B /* Income */ = {
+			isa = PBXGroup;
+			children = (
+				2C5E9DBF227ADBDC007AAD4B /* DiagramIncomeController.swift */,
+				2C5E9DC2227ADC72007AAD4B /* view */,
+			);
+			path = Income;
+			sourceTree = "<group>";
+		};
+		2C5E9DC2227ADC72007AAD4B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				2C5E9DC3227ADC93007AAD4B /* DiagramIncomeBackBtn.swift */,
+				2C5E9DC5227B0E82007AAD4B /* DiagramIncomeLable.swift */,
+				2C5E9DC7227B3480007AAD4B /* NextDiagramBtn.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		2C5E9DC9227B3635007AAD4B /* Costs */ = {
+			isa = PBXGroup;
+			children = (
+				2C5E9DCC227B36CC007AAD4B /* view */,
+				2C5E9DCA227B365C007AAD4B /* DiagramCostsController.swift */,
+			);
+			path = Costs;
+			sourceTree = "<group>";
+		};
+		2C5E9DCC227B36CC007AAD4B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				2C5E9DCD227B36EA007AAD4B /* DiagramCostsLable.swift */,
+				2C5E9DCF227B373C007AAD4B /* DiagramCostsBackBtn.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		2C65E203226470D900398636 /* Color */ = {
@@ -505,6 +566,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MoneyDay/Pods-MoneyDay-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
@@ -512,6 +574,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
@@ -527,6 +590,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C5E9DCE227B36EA007AAD4B /* DiagramCostsLable.swift in Sources */,
 				2C058352226F15C4009A98C1 /* IncomeHeaderForTable.swift in Sources */,
 				2C79D5902279ACC8007E33DE /* CostsViewController.swift in Sources */,
 				2C1BE0BE2269FBD600A365CA /* OptionListObject.swift in Sources */,
@@ -536,14 +600,18 @@
 				2C6607592271BE590092EE66 /* MainBalanceView.swift in Sources */,
 				2C79D5A42279B414007E33DE /* CostsBtnAdd.swift in Sources */,
 				2C4C5114226EE84B00F1FB69 /* MainView.swift in Sources */,
+				2C5E9DD0227B373C007AAD4B /* DiagramCostsBackBtn.swift in Sources */,
 				2C1BE0B82269E20700A365CA /* IncomeEditTextView.swift in Sources */,
 				2C79D5AE2279B56D007E33DE /* CostsEditLabelDate.swift in Sources */,
 				2C50B6BB226C8EEA008A41D5 /* IncomeTableViewCell.swift in Sources */,
 				2C79D5B22279B5BF007E33DE /* CostsEditTextFieldMoney.swift in Sources */,
 				2C66075B2271C69A0092EE66 /* IncomeBackBtn.swift in Sources */,
+				2C5E9DCB227B365C007AAD4B /* DiagramCostsController.swift in Sources */,
+				2C5E9DC8227B3480007AAD4B /* NextDiagramBtn.swift in Sources */,
 				2CE21A462279BF4F00199CE8 /* ChoiceCategoryTableViewCellCosts.swift in Sources */,
 				2C79D5B02279B599007E33DE /* CostsEditLabelMoney.swift in Sources */,
 				2C79D5A82279B47E007E33DE /* CostsEditeCategoryTextField.swift in Sources */,
+				2C5E9DC0227ADBDC007AAD4B /* DiagramIncomeController.swift in Sources */,
 				2C91816C226B1F1600B882CA /* RealmMethods.swift in Sources */,
 				2C1BE0B42269DCE700A365CA /* IncomeEditTextFieldMoney.swift in Sources */,
 				2CE21A532279C59700199CE8 /* ChoiceHeaderCosts.swift in Sources */,
@@ -584,6 +652,8 @@
 				2C79D59E2279B28E007E33DE /* CostsEditInTableViewController.swift in Sources */,
 				2CE21A482279C06000199CE8 /* CostsTableViewCell.swift in Sources */,
 				2C4380FF2270548D0095D0C8 /* CommentTextView.swift in Sources */,
+				2C5E9DC4227ADC93007AAD4B /* DiagramIncomeBackBtn.swift in Sources */,
+				2C5E9DC6227B0E82007AAD4B /* DiagramIncomeLable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

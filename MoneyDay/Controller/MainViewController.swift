@@ -33,6 +33,8 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        print (realmMethods.realm.configuration.fileURL)
+        
         navigationController?.navigationBar.isHidden = true
         
         let imagePNG = UIImage(named: "backgr2.png")!
@@ -75,8 +77,15 @@ class MainViewController: UIViewController {
         
         mainView.btnIncome.addTarget(self, action: #selector(btnIncome(_:)), for: .touchUpInside)
         mainView.btnCosts.addTarget(self, action: #selector(btnCosts(_:)), for: .touchUpInside)
+        mainView.btnDiagrams.addTarget(self, action: #selector(btnDiagrams(_:)), for: .touchUpInside)
         
     }
+    
+    @objc func btnDiagrams(_ sender: UIButton) {
+        let VC = DiagramIncomeController()
+        navigationController?.pushViewController(VC, animated: true)
+    }
+    
     @objc func btnIncome (_ sender: UIButton) {
         let VC = IncomeViewController()
         navigationController?.pushViewController(VC, animated: true)

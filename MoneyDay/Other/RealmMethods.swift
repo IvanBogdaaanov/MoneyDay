@@ -20,6 +20,36 @@ class RealmMethods {
         return Array(objects)
     }
     
+    func ChartCosts (category: String) -> Double {
+        
+        var object = realm.objects(OptionListObjectCosts.self)
+        var total = 0.0
+        
+        object = object.filter("Category == %@",category)
+        
+        for index in 0..<object.endIndex {
+            
+            total += object[index].totalMoney
+            
+        }
+        return total
+    }
+    
+    func ChartIncome (category: String) -> Double {
+        
+        var object = realm.objects(OptionListObject.self)
+        var total = 0.0
+        
+        object = object.filter("Category == %@",category)
+        
+        for index in 0..<object.endIndex {
+            
+            total += object[index].totalMoney
+            
+        }
+        return total
+    }
+    
     func getListCosts() -> [OptionListObjectCosts] {
         
         let objects = realm.objects(OptionListObjectCosts.self)
