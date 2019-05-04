@@ -24,7 +24,10 @@ class HeaderCosts: UIView {
     let backBtn = CostsBackBtn()
     
     override init(frame: CGRect) {
-        super.init(frame:frame)
+        super.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width , height: 130))
+
+        minDateTextField.delegate = self
+        maxDateTextField.delegate = self
         
         labelTotal.text = "Сумма 0 \u{20BD}"
         labelTotal.translatesAutoresizingMaskIntoConstraints = false
@@ -136,25 +139,12 @@ class HeaderCosts: UIView {
 }
 extension HeaderCosts: UITextFieldDelegate {
     
-    override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
-        if minDateTextField.isFirstResponder {
-            DispatchQueue.main.async(execute: {
-                (sender as? UIMenuController)?.setMenuVisible(false, animated: false)
-            })
-            return false
-        }
-        if maxDateTextField.isFirstResponder {
-            DispatchQueue.main.async(execute: {
-                (sender as? UIMenuController)?.setMenuVisible(false, animated: false)
-            })
-            return false
-        }
-        return super.canPerformAction(action, withSender: sender)
-    }
-    
-    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        return false
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        let currentCharacterCount = textField.text?.count ?? 0
+        let newLength = currentCharacterCount + string.count
+        return newLength <= 10
+        
     }
 
-    
 }

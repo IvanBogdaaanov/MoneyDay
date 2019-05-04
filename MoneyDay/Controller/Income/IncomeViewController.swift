@@ -11,13 +11,12 @@ import RealmSwift
 
 class IncomeViewController: UITableViewController {
     
-    var filterList = [OptionListObject]()
-    
     var money: Double = 0 {
         didSet {
             views.labelTotal.text = "Сумма \(money) \u{20BD}"
         }
     }
+    let alertForIncome = UIAlertController(title: "Ошибка", message: "Неверно введен формат даты", preferredStyle: .alert)
     let formatterDate = DateFormatter()
     let views = IncomeHeaderForTable()
     let id = "numberOne"
@@ -37,6 +36,18 @@ class IncomeViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        views.addBtn.addTarget(self, action: #selector(addTableCell(_:)), for: .touchUpInside)
+        views.backBtn.addTarget(self, action: #selector(backMain(_:)), for: .touchUpInside)
+        views.btnFilter.addTarget(self, action: #selector(tapBtnFilter(_:)) , for: .touchUpInside)
+        views.btnReturn.addTarget(self, action: #selector(tapBackList(_:)), for: .touchUpInside)
+        
+        tableView.tableHeaderView = views
+        
+        let action = UIAlertAction(title: "Ок", style: .default) { (action) in
+            
+        }
+        alertForIncome.addAction(action)
         
         let tapGestureDate = UITapGestureRecognizer(target: self, action: #selector(tapGestureDate(gestureRecognizer:)))
         view.addGestureRecognizer(tapGestureDate)
@@ -64,10 +75,10 @@ class IncomeViewController: UITableViewController {
     }
     
     @objc func addTableCell(_ sender: UIButton) {
-        filterList.removeAll()
         
         let vc = IncomeEditViewController()
         navigationController?.pushViewController(vc, animated: true)
+        
     }
     
     @objc func backMain(_ sender: UIButton) {
@@ -76,9 +87,17 @@ class IncomeViewController: UITableViewController {
     
     @objc func tapBtnFilter(_ sender: UIButton) {
         
-        if !(views.minDateTextField.text?.isEmpty)! {
-            if !(views.maxDateTextField.text?.isEmpty)! {
-                
+        let paternRegex = "([0-9][0-9]\\.[0-9][0-9]\\.[0-9][0-9][0-9][0-9])"
+        
+        let rangeTextMin = NSRange(location: 0, length: (views.minDateTextField.text?.utf16.count)!)
+        let regexMin = try! NSRegularExpression(pattern: paternRegex, options: [])
+        
+        let rangeTextMax = NSRange(location: 0, length: (views.maxDateTextField.text?.utf16.count)!)
+        let regexMax = try! NSRegularExpression(pattern: paternRegex, options: [])
+        
+        if regexMin.firstMatch(in: views.minDateTextField.text!, options: [], range: rangeTextMin) != nil {
+            if regexMax.firstMatch(in: views.minDateTextField.text!, options: [], range: rangeTextMax) != nil {
+            
                 formatterDate.dateFormat = "dd.MM.yyyy"
                 
                 let min = formatterDate.date(from: views.minDateTextField.text!)!
@@ -86,35 +105,32 @@ class IncomeViewController: UITableViewController {
                 
                 let result = realmMethods.filterDate(min: min, max: max)
                 
-                filterList = result
+                listIncome = result
                 
-                updateBalance(object: filterList)
+                updateBalance(object: listIncome)
                 
                 tableView.reloadData()
+
+                
+            } else {
+            
+                self.present(alertForIncome, animated: true, completion: nil)
                 
             }
+            
+        } else {
+            
+            self.present(alertForIncome, animated: true, completion: nil)
+
         }
     }
     
     @objc func tapBackList (_ sender: UIButton) {
         
-        filterList.removeAll()
+        listIncome = realmMethods.getList()
+        updateBalance(object: listIncome)
         tableView.reloadData()
         
-    }
-    
-    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 130
-    }
-    
-    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        
-        views.addBtn.addTarget(self, action: #selector(addTableCell(_:)), for: .touchUpInside)
-        views.backBtn.addTarget(self, action: #selector(backMain(_:)), for: .touchUpInside)
-        views.btnFilter.addTarget(self, action: #selector(tapBtnFilter(_:)) , for: .touchUpInside)
-        views.btnReturn.addTarget(self, action: #selector(tapBackList(_:)), for: .touchUpInside)
-        
-        return views
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -122,16 +138,8 @@ class IncomeViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    
-        if filterList.isEmpty {
-            
+
             return listIncome.count
-            
-        } else {
-            
-            return filterList.count
-            
-        }
     
     }
     
@@ -139,16 +147,9 @@ class IncomeViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: id, for: indexPath) as! IncomeTableViewCell
         cell.backgroundColor = UIColor.clear
 
-        if filterList.isEmpty {
             
         cell.addText(objectList: listIncome[indexPath.row])
-            
-        } else {
-            
-            cell.addText(objectList: filterList[indexPath.row])
-            
-        }
-        
+    
         
         return cell
     }

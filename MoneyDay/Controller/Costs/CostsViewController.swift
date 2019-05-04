@@ -11,6 +11,8 @@ import RealmSwift
 
 class CostsViewController: UITableViewController {
     
+    let alertForCosts = UIAlertController(title: "Ошибка", message: "Неверно введен формат даты", preferredStyle: .alert)
+    
     let views = HeaderCosts()
     
     var filterList = [OptionListObjectCosts]()
@@ -28,6 +30,17 @@ class CostsViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        views.addBtn.addTarget(self, action: #selector(addTableCell(_:)), for: .touchUpInside)
+        views.backBtn.addTarget(self, action: #selector(backMain(_:)), for: .touchUpInside)
+        views.btnFilter.addTarget(self, action: #selector(tapBtnFilter(_:)) , for: .touchUpInside)
+        views.btnReturn.addTarget(self, action: #selector(tapBackList(_:)), for: .touchUpInside)
+        
+        tableView.tableHeaderView = views
+        
+        let action = UIAlertAction(title: "Ок", style: .default) { (action) in
+            
+        }
+        alertForCosts.addAction(action)
                 
         let imagePNG = UIImage(named: "backgr.png")
         let imageView = UIImageView(image: imagePNG)
@@ -64,38 +77,23 @@ class CostsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        if filterList.isEmpty {
+
 
             return listCosts.count
 
-        } else {
-
-            return filterList.count
-
-        }
         
     }
-//
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: id, for: indexPath) as! CostsTableViewCell
         cell.backgroundColor = UIColor.clear
 
-        if filterList.isEmpty {
-
             cell.addText(objectList: listCosts[indexPath.row])
 
-        } else {
-
-            cell.addText(objectList: filterList[indexPath.row])
-
-        }
-        
-        
         return cell
     }
-//
+    
     override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
         let infoAction = UIContextualAction(style: .normal, title:  "Комментарий", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
@@ -123,25 +121,11 @@ class CostsViewController: UITableViewController {
 
         return UISwipeActionsConfiguration(actions: [infoAction,deleteAction])
     }
-//    
+    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50
     }
-    
-    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 130
-    }
-    
-    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        
-        views.addBtn.addTarget(self, action: #selector(addTableCell(_:)), for: .touchUpInside)
-        views.backBtn.addTarget(self, action: #selector(backMain(_:)), for: .touchUpInside)
-        views.btnFilter.addTarget(self, action: #selector(tapBtnFilter(_:)) , for: .touchUpInside)
-        views.btnReturn.addTarget(self, action: #selector(tapBackList(_:)), for: .touchUpInside)
-        
-        return views
-    }
-    
+
     @objc func addTableCell(_ sender: UIButton) {
         
         let vc = CostsEditInTableViewController()
@@ -157,8 +141,16 @@ class CostsViewController: UITableViewController {
     
     @objc func tapBtnFilter(_ sender: UIButton) {
         
-        if !(views.minDateTextField.text?.isEmpty)! {
-            if !(views.maxDateTextField.text?.isEmpty)! {
+        let paternRegex = "([0-9][0-9]\\.[0-9][0-9]\\.[0-9][0-9][0-9][0-9])"
+        
+        let rangeTextMin = NSRange(location: 0, length: (views.minDateTextField.text?.utf16.count)!)
+        let regexMin = try! NSRegularExpression(pattern: paternRegex, options: [])
+        
+        let rangeTextMax = NSRange(location: 0, length: (views.maxDateTextField.text?.utf16.count)!)
+        let regexMax = try! NSRegularExpression(pattern: paternRegex, options: [])
+        
+        if regexMin.firstMatch(in: views.minDateTextField.text!, options: [], range: rangeTextMin) != nil {
+            if regexMax.firstMatch(in: views.minDateTextField.text!, options: [], range: rangeTextMax) != nil {
                 
                 formatterDate.dateFormat = "dd.MM.yyyy"
                 
@@ -167,22 +159,30 @@ class CostsViewController: UITableViewController {
                 
                 let result = realmMethods.filterDateCosts(min: min, max: max)
                 
-                filterList = result
+                listCosts = result
                 
-                updateBalance(object: filterList)
-                
+                updateBalance(object: listCosts)
                 
                 tableView.reloadData()
                 
+                
+            } else {
+                
+                self.present(alertForCosts, animated: true, completion: nil)
+
             }
+            
         } else {
             
+            self.present(alertForCosts, animated: true, completion: nil)
+
         }
     }
     
     @objc func tapBackList(_ sender: UIButton) {
         
-        filterList.removeAll()
+        listCosts = realmMethods.getListCosts()
+        updateBalance(object: listCosts)
         tableView.reloadData()
 
     }
