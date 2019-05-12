@@ -26,8 +26,7 @@ class ChoiceCategoryController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let imagePNG = UIImage(named: "backgr3.png")!
-        view.backgroundColor = UIColor(patternImage: imagePNG)
+        view.addBackGround(imageName: "backgr3.png")
         
         tableView.register(ChoiceCategoryTableViewCell.self, forCellReuseIdentifier: id)
     }

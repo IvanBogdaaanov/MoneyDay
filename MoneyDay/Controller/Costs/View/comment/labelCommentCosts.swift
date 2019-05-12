@@ -16,7 +16,7 @@ class labelCommentCosts: UILabel {
         translatesAutoresizingMaskIntoConstraints = false
         text = "Комментарий:"
         textAlignment = .left
-        textColor = .gray
+        textColor = .black
         
     }
     

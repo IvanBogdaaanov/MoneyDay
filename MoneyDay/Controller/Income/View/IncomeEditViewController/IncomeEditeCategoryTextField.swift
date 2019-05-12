@@ -12,7 +12,7 @@ class IncomeEditeCategoryTextField: UITextField, UIPickerViewDelegate, UIPickerV
     
     let addNewCategoryBtn = UIButton()
     let pickerCategory = UIPickerView()
-    var Category = ["Зарплата","Накопления","Долг"]
+    var Category = ["Зарплата","Накопления","Другое"]
     let imageBtn = UIImage(named: "addCategory.png")?.withRenderingMode(.alwaysTemplate)
     
     override init(frame: CGRect) {

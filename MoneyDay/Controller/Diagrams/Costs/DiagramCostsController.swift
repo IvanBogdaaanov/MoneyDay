@@ -63,8 +63,7 @@ class DiagramCostsController: UIViewController {
         
         backBtn.addTarget(self, action: #selector(tapBackBtn(_:)), for: .touchUpInside)
         
-        let imagePNG = UIImage(named: "backgr.png")!
-        view.backgroundColor = UIColor(patternImage: imagePNG)
+        view.addBackGround(imageName: "backgr.png")
         
         view.addSubview(labelIncomeDiagram)
         view.addSubview(diagram)

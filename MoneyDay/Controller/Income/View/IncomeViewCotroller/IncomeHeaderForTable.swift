@@ -83,40 +83,41 @@ class IncomeHeaderForTable: UIView {
         addConstraints([
             
             labelTotal.topAnchor.constraint(equalTo: btnReturn.bottomAnchor, constant: 10),
+            labelTotal.leftAnchor.constraint(equalTo: leftAnchor),
             labelTotal.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 1),
             labelTotal.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 1/4),
-
+            
             btnReturn.leftAnchor.constraint(equalTo: backBtn.rightAnchor, constant: 10),
             btnReturn.rightAnchor.constraint(equalTo: btnFilter.leftAnchor),
             btnReturn.topAnchor.constraint(equalTo: minDateTextField.bottomAnchor, constant: 10),
-            btnReturn.heightAnchor.constraint(equalTo: minDateTextField.heightAnchor, multiplier: 1.5),
-
+            btnReturn.heightAnchor.constraint(equalToConstant: 35),
             
             btnFilter.rightAnchor.constraint(equalTo: addBtn.leftAnchor, constant: -10),
             btnFilter.leftAnchor.constraint(equalTo: btnReturn.rightAnchor),
             btnFilter.topAnchor.constraint(equalTo: maxDateTextField.bottomAnchor, constant: 10),
-            btnFilter.heightAnchor.constraint(equalTo: maxDateTextField.heightAnchor, multiplier: 1.5),
+            btnFilter.heightAnchor.constraint(equalToConstant: 35),
             btnFilter.widthAnchor.constraint(equalTo: maxDateTextField.widthAnchor, multiplier: 1.125),
             
-            minDateTextField.leftAnchor.constraint(equalTo: backBtn.rightAnchor, constant: 10),
+            minDateTextField.rightAnchor.constraint(equalTo: centerXAnchor, constant: -10),
+            
             minDateTextField.topAnchor.constraint(equalTo: topAnchor, constant: 14),
-            minDateTextField.heightAnchor.constraint(equalTo: backBtn.heightAnchor, multiplier: 1),
+            minDateTextField.heightAnchor.constraint(equalToConstant: 35),
             minDateTextField.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 1/3),
             
-            maxDateTextField.rightAnchor.constraint(equalTo: addBtn.leftAnchor, constant: -10),
+            maxDateTextField.leftAnchor.constraint(equalTo: centerXAnchor, constant: 10),
             maxDateTextField.topAnchor.constraint(equalTo: topAnchor, constant: 14),
-            maxDateTextField.heightAnchor.constraint(equalTo: addBtn.heightAnchor, multiplier: 1),
+            maxDateTextField.heightAnchor.constraint(equalToConstant: 35),
             maxDateTextField.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 1/3),
             
-            addBtn.topAnchor.constraint(equalTo: topAnchor, constant: 12),
+            addBtn.centerYAnchor.constraint(equalTo: minDateTextField.centerYAnchor),
             addBtn.heightAnchor.constraint(equalToConstant: 25),
             addBtn.widthAnchor.constraint(equalToConstant: 25),
             addBtn.rightAnchor.constraint(equalTo: rightAnchor, constant: -12),
             
-            backBtn.topAnchor.constraint(equalTo: topAnchor, constant: 12),
-            backBtn.heightAnchor.constraint(equalToConstant: 25),
-            backBtn.widthAnchor.constraint(equalToConstant: 25),
-            backBtn.leftAnchor.constraint(equalTo: leftAnchor, constant: 10)
+            backBtn.centerYAnchor.constraint(equalTo: minDateTextField.centerYAnchor),
+            backBtn.widthAnchor.constraint(equalToConstant: 30),
+            backBtn.heightAnchor.constraint(equalToConstant: 30),
+            backBtn.leftAnchor.constraint(equalTo: leftAnchor, constant: 12)
             
             ])
         

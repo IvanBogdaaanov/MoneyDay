@@ -16,7 +16,7 @@ class labelCommentChange: UILabel {
         translatesAutoresizingMaskIntoConstraints = false
         text = "Комментарий:"
         textAlignment = .left
-        textColor = .gray
+        textColor = .black
         
     }
     

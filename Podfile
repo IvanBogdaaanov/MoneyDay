@@ -7,5 +7,7 @@ target 'MoneyDay' do
 
   pod 'Charts'
   pod 'RealmSwift'
+  pod 'Alamofire'
+  pod 'AlamofireObjectMapper'
 
 end

@@ -15,7 +15,7 @@ class MainBalanceView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        backgroundColor = UIColor.gray.withAlphaComponent(0.5)
+        backgroundColor = UIColor.white.withAlphaComponent(0.5)
         translatesAutoresizingMaskIntoConstraints = false
         
         layer.borderColor = UIColor.gray.cgColor
@@ -23,7 +23,7 @@ class MainBalanceView: UIView {
         
         labelMoney.text = "Баланс: 0 \u{20BD}"
         labelMoney.translatesAutoresizingMaskIntoConstraints = false
-        labelMoney.textColor = .white
+        labelMoney.textColor = .black
         
         layer.cornerRadius = 15
         

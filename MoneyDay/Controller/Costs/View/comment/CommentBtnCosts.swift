@@ -14,9 +14,9 @@ class CommentBtnCosts: UIButton {
         super.init(frame: frame)
         
         layer.cornerRadius = 30
-        layer.shadowRadius = 4
-        layer.shadowColor = UIColor.gray.cgColor
-        layer.shadowOpacity = 0.5
+//        layer.shadowRadius = 4
+//        layer.shadowColor = UIColor.gray.cgColor
+//        layer.shadowOpacity = 0.5
         contentEdgeInsets = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
         translatesAutoresizingMaskIntoConstraints = false
         setTitle("Изменить", for: .normal)

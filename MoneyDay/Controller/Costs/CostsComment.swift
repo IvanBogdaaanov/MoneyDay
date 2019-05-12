@@ -42,9 +42,8 @@ class CostsComment: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let imagePNG = UIImage(named: "backgr.png")!
-        view.backgroundColor = UIColor(patternImage: imagePNG)
-        
+        view.addBackGround(imageName: "backgr.png")
+
         textViewComment.text = textForTextViewComment
         
         btnChangeComment.addTarget(self, action: #selector(btnTap(_:)), for: .touchUpInside)

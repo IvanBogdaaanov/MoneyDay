@@ -14,8 +14,8 @@ class CommentTextView: UITextView {
         super.init(frame: frame, textContainer: textContainer)
         
         translatesAutoresizingMaskIntoConstraints = false
-        textColor = .white
-        backgroundColor = UIColor.three.withAlphaComponent(0.5)
+        textColor = .black
+        backgroundColor = UIColor.white.withAlphaComponent(0.5)
         layer.cornerRadius = 15
         font = UIFont.systemFont(ofSize: 20)
         textContainerInset = UIEdgeInsets(top: 9, left: 5, bottom: 5, right: 5)

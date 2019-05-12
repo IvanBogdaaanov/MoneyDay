@@ -66,8 +66,8 @@ class DiagramIncomeController: UIViewController {
         backBtn.addTarget(self, action: #selector(tapBackBtn(_:)), for: .touchUpInside)
         nextDiagramBtn.addTarget(self, action: #selector(tapNextDiagram(_ :)), for: .touchUpInside)
         
-        let imagePNG = UIImage(named: "backgr.png")!
-        view.backgroundColor = UIColor(patternImage: imagePNG)
+        view.addBackGround(imageName: "backgr.png")
+
         
         view.addSubview(nextDiagramBtn)
         view.addSubview(labelIncomeDiagram)
@@ -77,8 +77,8 @@ class DiagramIncomeController: UIViewController {
             
             nextDiagramBtn.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -15),
             nextDiagramBtn.topAnchor.constraint(equalTo: view.topAnchor, constant: 20),
-            nextDiagramBtn.widthAnchor.constraint(equalToConstant: 35),
-            nextDiagramBtn.heightAnchor.constraint(equalToConstant: 35),
+            nextDiagramBtn.widthAnchor.constraint(equalToConstant: 30),
+            nextDiagramBtn.heightAnchor.constraint(equalToConstant: 30),
             
             labelIncomeDiagram.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             labelIncomeDiagram.topAnchor.constraint(equalTo: view.topAnchor, constant: 25),

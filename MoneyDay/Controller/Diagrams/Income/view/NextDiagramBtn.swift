@@ -13,7 +13,9 @@ class NextDiagramBtn: UIButton {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        let image = UIImage(named: "push2.png")
+        let image = UIImage(named: "push2.png")?.withRenderingMode(.alwaysTemplate)
+
+        tintColor = .gray
         
         setImage(image, for: .normal)
         

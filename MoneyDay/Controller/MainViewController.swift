@@ -8,6 +8,8 @@
 
 import UIKit
 import RealmSwift
+import Alamofire
+import AlamofireObjectMapper
 
 class MainViewController: UIViewController {
         
@@ -28,21 +30,29 @@ class MainViewController: UIViewController {
 
         updateBalance()
         mainBalanceView.labelMoney.text = "Баланс: \(money) \u{20BD}"
+        
+        let url = "https://www.cbr-xml-daily.ru/daily_json.js"
+        
+        Alamofire.request(url).responseObject { [weak self] (response: DataResponse<Welcome>) in
+            guard let welcome = response.result.value else { return }
+            if let usd = welcome.valute?["USD"], let value = usd.value {
+                self?.mainView.updateCourse(value: value)
+            }
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        print (realmMethods.realm.configuration.fileURL)
-        
         navigationController?.navigationBar.isHidden = true
-        
-        let imagePNG = UIImage(named: "backgr2.png")!
-        view.backgroundColor = UIColor(patternImage: imagePNG)
+            
+        view.addBackGround(imageName: "backgr2.png")
         
         setupView()
         
     }
+    
+    
     
     func updateBalance() {
         money = 0
@@ -78,7 +88,6 @@ class MainViewController: UIViewController {
         mainView.btnIncome.addTarget(self, action: #selector(btnIncome(_:)), for: .touchUpInside)
         mainView.btnCosts.addTarget(self, action: #selector(btnCosts(_:)), for: .touchUpInside)
         mainView.btnDiagrams.addTarget(self, action: #selector(btnDiagrams(_:)), for: .touchUpInside)
-        
     }
     
     @objc func btnDiagrams(_ sender: UIButton) {

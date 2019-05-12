@@ -16,8 +16,6 @@ class CostsBackBtn: UIButton {
         let image = UIImage(named: "push.png")
         setImage(image, for: .normal)
         translatesAutoresizingMaskIntoConstraints = false
-        
-        
     }
     
     required init?(coder aDecoder: NSCoder) {

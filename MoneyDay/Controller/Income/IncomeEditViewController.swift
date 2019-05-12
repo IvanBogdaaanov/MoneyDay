@@ -33,7 +33,7 @@ class IncomeEditViewController: UIViewController {
             
         categorys = realmMethods.getCategory()
         
-        textFieldCategory.Category = ["Зарплата","Накопления","Долг"]
+        textFieldCategory.Category = ["Зарплата","Накопления","Другое"]
         
         if !(categorys.isEmpty) {
             for index in 0..<categorys.endIndex {
@@ -56,9 +56,8 @@ class IncomeEditViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let imagePNG = UIImage(named: "backgr.png")!
-        view.backgroundColor = UIColor(patternImage: imagePNG)
-        
+        view.addBackGround(imageName: "backgr.png")
+
         let tapImage = UITapGestureRecognizer(target: self, action: #selector(tapCategory(_:)))
         imageCategoryView.addGestureRecognizer(tapImage)
         imageCategoryView.isUserInteractionEnabled = true

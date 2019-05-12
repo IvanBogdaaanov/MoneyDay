@@ -26,10 +26,8 @@ class ChoiceCategoryCosts: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("Costs")
-        
-        let imagePNG = UIImage(named: "backgr3.png")!
-        view.backgroundColor = UIColor(patternImage: imagePNG)
+        view.addBackGround(imageName: "backgr3.png")
+
         
         tableView.register(ChoiceCategoryTableViewCellCosts.self, forCellReuseIdentifier: id)
     }

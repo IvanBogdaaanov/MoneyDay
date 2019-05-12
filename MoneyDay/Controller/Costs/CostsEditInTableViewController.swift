@@ -57,9 +57,8 @@ class CostsEditInTableViewController: UIViewController {
         super.viewDidLoad()
         
         
-        let imagePNG = UIImage(named: "backgr.png")!
-        view.backgroundColor = UIColor(patternImage: imagePNG)
-        
+        view.addBackGround(imageName: "backgr.png")
+
         let tapImage = UITapGestureRecognizer(target: self, action: #selector(tapCategory(_:)))
         imageCategoryView.addGestureRecognizer(tapImage)
         imageCategoryView.isUserInteractionEnabled = true
