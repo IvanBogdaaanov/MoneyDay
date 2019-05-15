@@ -176,10 +176,6 @@ class IncomeEditViewController: UIViewController {
             
             navigationController?.popViewController(animated: true)
             
-        } else {
-            
-            print("текстовое поле пустое")
-            
         }
     }    
 }

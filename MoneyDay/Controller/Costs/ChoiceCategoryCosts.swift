@@ -19,14 +19,15 @@ class ChoiceCategoryCosts: UITableViewController {
         super.viewWillAppear(animated)
         
         categorys = realmMethods.getCategoryCosts()
-        categorys.reverse()
         
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.addBackGround(imageName: "backgr3.png")
+        let imagePNG = UIImage(named: "backgr3.png")
+        let imageView = UIImageView(image: imagePNG)
+        tableView.backgroundView = imageView
 
         
         tableView.register(ChoiceCategoryTableViewCellCosts.self, forCellReuseIdentifier: id)
@@ -75,7 +76,6 @@ class ChoiceCategoryCosts: UITableViewController {
             let object = self.categorys[indexPath.row]
             self.realmMethods.deleteOption(object: object)
             self.categorys = self.realmMethods.getCategoryCosts()
-            self.categorys.reverse()
             tableView.reloadData()
             
             success(true)
@@ -95,7 +95,6 @@ class ChoiceCategoryCosts: UITableViewController {
             let object = ListCategoryCosts(categoryAdd: views.textFieldCategory.text!)
             realmMethods.addInRealmCategoryCosts(object)
             categorys = realmMethods.getCategoryCosts()
-            categorys.reverse()
             tableView.reloadData()
         }
     }

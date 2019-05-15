@@ -157,7 +157,27 @@ class RealmMethods {
 
         object = object.filter("DateAndTime <= %@ ",maxNew!)
 
+        object = object.sorted(byKeyPath: "DateAndTime", ascending: false)
         
+        return Array(object)
+        
+    }
+    func filterArrayTimeCosts () -> [OptionListObjectCosts] {
+        
+        var object = realm.objects(OptionListObjectCosts.self)
+        
+        object = object.sorted(byKeyPath: "DateAndTime", ascending: false)
+        
+        return Array(object)
+        
+    }
+    
+    func filterArrayTimeIncome () -> [OptionListObject] {
+        
+        var object = realm.objects(OptionListObject.self)
+
+        object = object.sorted(byKeyPath: "DateAndTime", ascending: false)
+
         return Array(object)
         
     }
@@ -182,7 +202,8 @@ class RealmMethods {
         
         object = object.filter("DateAndTime <= %@ ",maxNew!)
         
-        
+        object = object.sorted(byKeyPath: "DateAndTime", ascending: false)
+            
         return Array(object)
         
     }

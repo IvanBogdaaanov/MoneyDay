@@ -19,14 +19,15 @@ class ChoiceCategoryController: UITableViewController {
         super.viewWillAppear(animated)
         
         categorys = realmMethods.getCategory()
-        categorys.reverse()
         
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.addBackGround(imageName: "backgr3.png")
+        let imagePNG = UIImage(named: "backgr3.png")
+        let imageView = UIImageView(image: imagePNG)
+        tableView.backgroundView = imageView
         
         tableView.register(ChoiceCategoryTableViewCell.self, forCellReuseIdentifier: id)
     }
@@ -74,7 +75,6 @@ class ChoiceCategoryController: UITableViewController {
             let object = self.categorys[indexPath.row]
             self.realmMethods.deleteOption(object: object)
             self.categorys = self.realmMethods.getCategory()
-            self.categorys.reverse()
             tableView.reloadData()
             
             success(true)
@@ -94,7 +94,6 @@ class ChoiceCategoryController: UITableViewController {
             let object = ListCategoryIncome(categoryAdd: views.textFieldCategory.text!)
             realmMethods.addInRealmCategory(object)
             categorys = realmMethods.getCategory()
-            categorys.reverse()
             tableView.reloadData()
         }
     }

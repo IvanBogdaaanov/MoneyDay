@@ -82,10 +82,10 @@ class IncomeHeaderForTable: UIView {
         
         addConstraints([
             
-            labelTotal.topAnchor.constraint(equalTo: btnReturn.bottomAnchor, constant: 10),
             labelTotal.leftAnchor.constraint(equalTo: leftAnchor),
             labelTotal.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 1),
             labelTotal.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 1/4),
+            labelTotal.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -1),
             
             btnReturn.leftAnchor.constraint(equalTo: backBtn.rightAnchor, constant: 10),
             btnReturn.rightAnchor.constraint(equalTo: btnFilter.leftAnchor),

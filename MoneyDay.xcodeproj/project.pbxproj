@@ -211,13 +211,6 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
-		2C1BE0C1226A470200A365CA /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Protocol;
-			sourceTree = "<group>";
-		};
 		2C5E9DBE227ADB9C007AAD4B /* Diagrams */ = {
 			isa = PBXGroup;
 			children = (
@@ -443,7 +436,6 @@
 			isa = PBXGroup;
 			children = (
 				2CE92CFE22633D8E00B35AB6 /* Info.plist */,
-				2C1BE0C1226A470200A365CA /* Protocol */,
 				2C02C7A02264AF44002228E3 /* Other */,
 				2C02C79F2264AF2E002228E3 /* Controller */,
 				2C65E203226470D900398636 /* Color */,
@@ -816,7 +808,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = money;
+				PRODUCT_BUNDLE_IDENTIFIER = rus.app.MoneyDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -838,7 +830,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = money;
+				PRODUCT_BUNDLE_IDENTIFIER = rus.app.MoneyDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;

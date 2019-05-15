@@ -27,8 +27,7 @@ class IncomeViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        listIncome = realmMethods.getList()
-        listIncome.reverse()
+        listIncome = realmMethods.filterArrayTimeIncome()
         tableView.reloadData()
         updateBalance(object: listIncome)
         views.labelTotal.text = "Сумма \(money) \u{20BD}"
@@ -127,7 +126,7 @@ class IncomeViewController: UITableViewController {
     
     @objc func tapBackList (_ sender: UIButton) {
         
-        listIncome = realmMethods.getList()
+        listIncome = realmMethods.filterArrayTimeIncome()
         updateBalance(object: listIncome)
         tableView.reloadData()
         
@@ -173,8 +172,7 @@ class IncomeViewController: UITableViewController {
             self.money -= object.totalMoney
             self.realmMethods.deleteOption(object: object)
             
-            self.listIncome = self.realmMethods.getList()
-            self.listIncome.reverse()
+            self.listIncome = self.realmMethods.filterArrayTimeIncome()
             tableView.reloadData()
             
             success(true)

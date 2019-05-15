@@ -62,8 +62,7 @@ class CostsViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        listCosts = realmMethods.getListCosts()
-        listCosts.reverse()
+        listCosts = realmMethods.filterArrayTimeCosts()
         tableView.reloadData()
         updateBalance(object: listCosts)
         views.labelTotal.text = "Сумма \(money) \u{20BD}"
@@ -110,8 +109,7 @@ class CostsViewController: UITableViewController {
             let object = self.listCosts[indexPath.row]
             self.money -= object.totalMoney
             self.realmMethods.deleteOption(object: object)
-            self.listCosts = self.realmMethods.getListCosts()
-            self.listCosts.reverse()
+            self.listCosts = self.realmMethods.filterArrayTimeCosts()
             tableView.reloadData()
 
             success(true)
@@ -181,7 +179,7 @@ class CostsViewController: UITableViewController {
     
     @objc func tapBackList(_ sender: UIButton) {
         
-        listCosts = realmMethods.getListCosts()
+        listCosts = realmMethods.filterArrayTimeCosts()
         updateBalance(object: listCosts)
         tableView.reloadData()
 
